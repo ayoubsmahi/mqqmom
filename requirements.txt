@@ -1,0 +1,7 @@
+python-pptx
+fpdf2
+markdown
+pyserial
+paho-mqtt
+streamlit
+pandas

@@ -41,7 +41,7 @@ def fetch_sensor_data() -> pd.DataFrame:
 
 
 def send_fan_command(command: str) -> None:
-    publish.single(command, hostname=BROKER, port=PORT, topic=FAN_TOPIC)
+    publish.single(FAN_TOPIC, payload=command, hostname=BROKER, port=PORT)
 
 
 st.title("MOM IoT Dashboard")
